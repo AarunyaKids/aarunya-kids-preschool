@@ -129,3 +129,9 @@ main{max-width:1100px}
 .slider .dots button{width:13px;height:13px;margin:0 5px;border-radius:50%;border:2px solid #fff;background:transparent;cursor:pointer;padding:0}
 .slider .dots button.on{background:#fff}
 @media(max-width:700px){.slider{height:60vw;min-height:260px;border-radius:14px}.slider .prev,.slider .next{width:40px;height:40px;font-size:24px}}
+.helpnote{background:#fff9db;border-left:6px solid #fab005;font-size:18px}
+.bigmenu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:14px 0}
+.bigbtn{display:block;background:#fff;border:3px solid #74c0fc;border-radius:18px;padding:18px;text-decoration:none;color:#222}.bigbtn b{display:block;font-size:22px;margin-bottom:6px}.bigbtn small{font-size:15px;color:#555}
+.filepick{display:block;border:3px dashed #74c0fc;border-radius:14px;padding:14px;background:#f1f8ff;font-weight:bold}.filepick input{display:block;margin-top:8px;font-size:17px;width:100%}
+.btn.big{font-size:20px;padding:16px 26px}
+@media(max-width:600px){.tab{flex:1 1 45%;text-align:center}.card .btn{margin:4px 0}}
