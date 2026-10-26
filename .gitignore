@@ -1,0 +1,10 @@
+node_modules/
+data/db.json
+uploads/
+*.log
+.env
+data/sessions.json
+data/.devsecret
+
+server.js.bak-*
+screenshots/
