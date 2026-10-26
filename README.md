@@ -4,7 +4,7 @@
     npm install
     npm start          # http://localhost:3000  (PORT env var to change)
 
-Demo logins (change them at /password right away): admin / admin123, parent1 / parent123.
+Logins: admin password comes from the ADMIN_PASSWORD setting on Render (not stored in this code). Demo parent: parent1 / parent123. Forgot login? Use the links on /login; the owner uses the ADMIN_RESET_KEY setting.
 On first start an empty data/db.json is created from built-in defaults. `seed/db.sample.json` is a copy of the current content (no booking requests) that you can copy to `data/db.json` to start from it.
 
 Data lives in `data/db.json`, photos in `uploads/` (both under `DATA_DIR` if set). Kid profiles and kid photos are only shown to the admin and that child's parent.

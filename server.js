@@ -29,7 +29,7 @@ const addr=()=>db.daycare.address||'';
 const phones=()=>(db.daycare.phones||'').split(',').map(x=>x.trim()).filter(Boolean);
 const phoneLinks=()=>phones().map(p=>{const d=p.replace(/\D/g,'').slice(-10);return `<a class=tel href="tel:+91${d}">+91 ${d.slice(0,5)} ${d.slice(5)}</a>`}).join(' ');
 const findUs=()=>{const a=encodeURIComponent(addr());const pin=(db.daycare.mapEmbed||`https://maps.google.com/maps?q=${a}&z=16&output=embed`);const open=db.daycare.mapLink||`https://www.google.com/maps/search/?api=1&query=${a}`;return `<div class="card findus"><h2>Find us</h2><p class=addr>${e(addr())}</p><p class=phones>Call us: ${phoneLinks()}</p><p>Email: ${mail()}</p>${follow()}<div class=map><iframe src="${pin}" title="Map of Aarunya Kids Preschool in Nizampet" loading=lazy referrerpolicy=no-referrer-when-downgrade allowfullscreen></iframe></div><p><a class="btn b2" href="${open}" target=_blank rel=noopener>Open in Google Maps</a></p></div>`};
-function seed(){return{users:[{id:'u1',role:'admin',username:'admin',name:'School Owner',pass:bcrypt.hashSync('admin123',8)},{id:'u2',role:'parent',username:'parent1',name:'Demo Parent',pass:bcrypt.hashSync('parent123',8)}],
+function seed(){return{users:[{id:'u1',role:'admin',username:'admin',name:'School Owner',pass:bcrypt.hashSync(process.env.ADMIN_PASSWORD||crypto.randomBytes(12).toString('hex'),8)},{id:'u2',role:'parent',username:'parent1',name:'Demo Parent',pass:bcrypt.hashSync('parent123',8)}],
 announcements:[{id:'a1',title:P+'Welcome to the new school year!',body:'Example announcement. The owner can edit or delete this from the Admin page.',date:'2026-10-24'}],
 
 uniforms:[{id:'n1',name:'School uniform',desc:'Photo coming soon.',photo:''}],
