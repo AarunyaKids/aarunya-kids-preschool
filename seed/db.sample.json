@@ -15,48 +15,9 @@
    "pass": "$2b$08$z6lEgfLqzD621ocRaHfDg.pBXbVJ3IFq62BPDn5eHzJn5BOrgH8T."
   }
  ],
- "announcements": [
-  {
-   "id": "a1",
-   "title": "[PLACEHOLDER] Welcome to the new school year!",
-   "body": "Example announcement. The owner can edit or delete this from the Admin page.",
-   "date": "2026-10-24"
-  }
- ],
- "fees": [
-  {
-   "id": "f1",
-   "item": "[PLACEHOLDER] Admission fee",
-   "amount": "\u20b9 ____ (to be filled by school)",
-   "note": "One time"
-  },
-  {
-   "id": "f2",
-   "item": "[PLACEHOLDER] Monthly tuition",
-   "amount": "\u20b9 ____ (to be filled by school)",
-   "note": "Per month"
-  },
-  {
-   "id": "f3",
-   "item": "[PLACEHOLDER] Daycare (per month)",
-   "amount": "\u20b9 ____ (to be filled by school)",
-   "note": "Optional"
-  }
- ],
- "uniforms": [
-  {
-   "id": "n1",
-   "name": "[PLACEHOLDER] Summer uniform",
-   "desc": "Example description \u2013 colours and items to be added by school.",
-   "photo": ""
-  },
-  {
-   "id": "n2",
-   "name": "[PLACEHOLDER] Sports day uniform",
-   "desc": "Example description.",
-   "photo": ""
-  }
- ],
+ "announcements": [],
+ "fees": [],
+ "uniforms": [],
  "daycare": {
   "timings": "Daycare: 8:30 AM to 6:30 PM",
   "howto": "1. Call us on +91 86886 41056 or +91 97045 68440, email aarunyakidspreschool@gmail.com, or fill in the enquiry form below.\n2. Visit the school at Road No. 7, Venkatraya Nagar, Nizampet.\n3. Meet us to discuss your child's programme and fees in person.\n4. Complete the admission.",
@@ -66,26 +27,7 @@
   "email": "aarunyakidspreschool@gmail.com",
   "facebook": "https://www.facebook.com/share/1A7gmaKYhu/"
  },
- "kids": [
-  {
-   "id": "k1",
-   "name": "Demo Child A",
-   "cls": "Nursery",
-   "photo": "",
-   "parentId": "u2",
-   "contact": "",
-   "allergies": ""
-  },
-  {
-   "id": "k2",
-   "name": "Demo Child B",
-   "cls": "LKG",
-   "photo": "",
-   "parentId": "u2",
-   "contact": "+91 00000 00000 (placeholder)",
-   "allergies": "None (placeholder)"
-  }
- ],
+ "kids": [],
  "bookings": [],
  "videos": [
   {
