@@ -63,3 +63,5 @@
 @keyframes aiRoll{0%,15%{transform:rotate(0)}80%,100%{transform:rotate(720deg)}}
 #aIntro .duck{animation:aiBob 1.6s ease-in-out infinite alternate}
 @keyframes aiBob{from{transform:translateY(0) rotate(-3deg)}to{transform:translateY(1px) rotate(3deg)}}
+#aIntro .hang{transform-box:fill-box;transform-origin:50% 0;animation:aiSway 1.8s ease-in-out infinite alternate}
+@keyframes aiSway{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
