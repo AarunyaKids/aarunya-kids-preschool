@@ -52,8 +52,6 @@
 @media (max-width:600px){#aIntro .hi5{top:26%}}
 #aIntro .bseek{animation:aiSeek 6s ease-in-out forwards}
 @keyframes aiSeek{0%{transform:translateX(0)}25%{transform:translateX(-12px) scaleX(-1)}50%{transform:translateX(10px)}80%,100%{transform:translateX(24px)}}
-#aIntro .carrot{animation:aiCarrot 1.2s ease-in-out infinite}
-@keyframes aiCarrot{50%{transform:translate(34px,4px) rotate(8deg)}}
 #aIntro .snailm{animation:aiSnail 7s linear forwards}
 @keyframes aiSnail{to{transform:translateX(14px)}}
 @media (prefers-reduced-motion:reduce){#aIntro .bseek,#aIntro .snailm,#aIntro .carrot{animation:none}}
