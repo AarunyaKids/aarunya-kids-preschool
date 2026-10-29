@@ -73,7 +73,7 @@
 @keyframes aiLogo{from{opacity:0;transform:scale(.3)}70%{transform:scale(1.2)}to{opacity:1;transform:scale(1)}}
 #aIntro.go .kids{animation:aiEnter 1.2s 1.4s ease-in forwards;transform:translate(195px,200px) scale(.42)}
 @keyframes aiEnter{from{transform:translate(195px,200px) scale(.42);opacity:1}to{transform:translate(198px,180px) scale(.3);opacity:0}}
-#aIntro.go .arm{animation:aiClap .2s ease-in-out 4 alternate!important}
+
 #aIntro.go .arm.l{--d:-1}
 @keyframes aiClap{from{rotate:0deg}to{rotate:calc(var(--d,1) * -70deg)}}
 #aIntro.go .hi5{opacity:0!important;pointer-events:none;transition:opacity .3s}
