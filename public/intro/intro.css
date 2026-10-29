@@ -9,7 +9,6 @@
 #aIntro .sun .rays{transform-box:view-box;transform-origin:0 0;animation:aiSpin 8s linear infinite}
 #aIntro .bird{opacity:0;animation:aiFly 9s ease-in-out forwards}
 #aIntro .bird .w{transform-box:fill-box;transform-origin:center;animation:aiFlap .45s ease-in-out infinite alternate}
-#aIntro .flag{transform-origin:left center;animation:aiFlag 1s ease-in-out infinite alternate}
 #aIntro .kids,#aIntro .sun{transform-box:view-box;transform-origin:0 0}
 #aIntro .kids{animation:aiWalk 6s cubic-bezier(.35,.1,.55,1) forwards}
 #aIntro .bob{animation:aiKBob .35s ease-in-out infinite alternate}
@@ -25,7 +24,6 @@
 @keyframes aiSpin{to{transform:rotate(360deg)}}
 @keyframes aiFly{0%{opacity:0;transform:translate(0,0)}10%{opacity:1}25%{transform:translate(-40px,-22px)}50%{transform:translate(-85px,-34px)}75%{transform:translate(-130px,-40px)}90%{opacity:1}100%{opacity:0;transform:translate(-175px,-38px)}}
 @keyframes aiFlap{from{transform:scaleY(1)}to{transform:scaleY(.45)}}
-@keyframes aiFlag{to{transform:skewY(6deg) scaleX(.85)}}
 @keyframes aiWalk{from{transform:translate(185px,300px) scale(1.15)}to{transform:translate(195px,200px) scale(.42)}}
 @keyframes aiBob{from{transform:translateY(0)}to{transform:translateY(-2px)}}
 @keyframes aiStep{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}@keyframes aiKBob{from{transform:translateY(0)}to{transform:translateY(-1.6px)}}
