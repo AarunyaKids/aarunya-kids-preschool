@@ -33,4 +33,12 @@
 @keyframes aiWake{to{transform:scaleY(0)}}
 @keyframes aiHop{50%{transform:translateY(-14px)}}
 @keyframes aiFade{to{opacity:1}}
+#aIntro .monkey{transform-box:fill-box;transform-origin:50% 0;animation:aiMonkey 2.4s ease-in-out infinite alternate}
+#aIntro .monkey>*{transform-box:fill-box}
+#aIntro .swing{transform-box:fill-box;transform-origin:50% 0;animation:aiSwingSeat 1.2s ease-in-out infinite alternate}
+#aIntro .bunny{animation:aiHop2 .7s ease-in-out infinite}
+@keyframes aiMonkey{0%{transform:translateX(-26px) rotate(-8deg)}25%{transform:translateX(-13px) rotate(8deg)}50%{transform:translateX(0) rotate(-8deg)}75%{transform:translateX(13px) rotate(8deg)}100%{transform:translateX(26px) rotate(-8deg)}}
+@keyframes aiSwingSeat{from{transform:rotate(-22deg)}to{transform:rotate(22deg)}}
+@keyframes aiHop2{50%{transform:translateY(-7px)}}
+@media (max-width:600px){#aIntro .owl{width:54px}#aIntro .title{top:9%}}
 @media (prefers-reduced-motion:reduce){#aIntro{display:none}}
