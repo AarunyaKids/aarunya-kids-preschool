@@ -65,8 +65,12 @@
 @keyframes aiBob{from{transform:translateY(0) rotate(-3deg)}to{transform:translateY(1px) rotate(3deg)}}
 #aIntro .hang{transform-box:fill-box;transform-origin:50% 0;animation:aiSway 1.8s ease-in-out infinite alternate}
 @keyframes aiSway{from{transform:rotate(-8deg)}to{transform:rotate(8deg)}}
-#aIntro .door{transform-box:fill-box;transform-origin:0 50%;transition:transform .7s ease .8s}
-#aIntro.go .door{transform:scaleX(.12)}
+#aIntro .door{transform-box:fill-box;transform-origin:0 50%;}
+#aIntro.go .door{animation:aiDoor 2.4s .8s ease-in-out forwards}
+@keyframes aiDoor{0%{transform:none}25%,75%{transform:scaleX(.12)}100%{transform:none}}
+#aIntro .dlogo{opacity:0;transform-box:fill-box;transform-origin:center}
+#aIntro.go .dlogo{animation:aiLogo .6s 3.2s ease-out forwards}
+@keyframes aiLogo{from{opacity:0;transform:scale(.3)}70%{transform:scale(1.2)}to{opacity:1;transform:scale(1)}}
 #aIntro.go .kids{animation:aiEnter 1.2s 1.4s ease-in forwards;transform:translate(195px,200px) scale(.42)}
 @keyframes aiEnter{from{transform:translate(195px,200px) scale(.42);opacity:1}to{transform:translate(198px,180px) scale(.3);opacity:0}}
 #aIntro.go .arm{animation:aiClap .2s ease-in-out 4 alternate!important}
