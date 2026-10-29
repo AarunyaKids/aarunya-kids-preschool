@@ -56,3 +56,10 @@
 @keyframes aiSnail{to{transform:translateX(14px)}}
 #aIntro .fronds{transform-box:fill-box;transform-origin:50% 100%;animation:aiSway 2.4s ease-in-out infinite alternate}@keyframes aiSway{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
 @media (prefers-reduced-motion:reduce){#aIntro .bseek,#aIntro .snailm,#aIntro .carrot,#aIntro .fronds{animation:none}}
+
+#aIntro .panda{animation:aiPanda 3.2s 1s ease-in infinite}
+#aIntro .pr{transform-box:fill-box;transform-origin:center;animation:aiRoll 3.2s 1s ease-in infinite}
+@keyframes aiPanda{0%,15%{transform:translate(10px,-50px)}70%{transform:translate(48px,-8px)}80%,100%{transform:translate(60px,-4px)}}
+@keyframes aiRoll{0%,15%{transform:rotate(0)}80%,100%{transform:rotate(720deg)}}
+#aIntro .duck{animation:aiBob 1.6s ease-in-out infinite alternate}
+@keyframes aiBob{from{transform:translateY(0) rotate(-3deg)}to{transform:translateY(1px) rotate(3deg)}}
