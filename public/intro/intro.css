@@ -18,7 +18,7 @@
 #aIntro .arm>g{transform-origin:50% 0;transform-box:fill-box}
 #aIntro .arm.l>g{animation:aiSwing .7s ease-in-out infinite alternate-reverse}
 #aIntro .arm.r>g{animation:aiSwing .7s ease-in-out infinite alternate}
-#aIntro .owl{position:absolute;bottom:4%;right:4%;width:clamp(60px,11vw,110px);animation:aiHop .5s 2.2s 2 ease-in-out}
+#aIntro .otree{position:absolute;bottom:0;right:2%;width:clamp(130px,22vw,240px);aspect-ratio:200/260}#aIntro .otree .tree{position:absolute;inset:0;width:100%;height:100%}#aIntro .owl{position:absolute;bottom:52.7%;left:8%;width:45%;animation:aiHop .5s 2.2s 2 ease-in-out}
 #aIntro .owl .lid{transform-origin:center;transform-box:fill-box;animation:aiWake .6s 1.2s forwards}
 @keyframes aiRise{to{transform:translate(300px,105px)}}
 @keyframes aiSpin{to{transform:rotate(360deg)}}
@@ -38,7 +38,7 @@
 @keyframes aiMonkey{0%{transform:translateX(-26px) rotate(-8deg)}25%{transform:translateX(-13px) rotate(8deg)}50%{transform:translateX(0) rotate(-8deg)}75%{transform:translateX(13px) rotate(8deg)}100%{transform:translateX(26px) rotate(-8deg)}}
 @keyframes aiSwingSeat{from{transform:rotate(-22deg)}to{transform:rotate(22deg)}}
 @keyframes aiHop2{50%{transform:translateY(-7px)}}
-@media (max-width:600px){#aIntro .owl{width:54px}#aIntro .title{top:9%}}
+@media (max-width:600px){#aIntro .otree{width:120px}#aIntro .title{top:9%}}
 @media (prefers-reduced-motion:reduce){#aIntro{display:none}}
 #aIntro{cursor:default}
 #aIntro .hi5{position:absolute;z-index:3;left:50%;top:max(10px,3%);transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px;background:#fff;border:3px solid #f39c34;border-radius:999px;padding:14px 22px;font:800 clamp(14px,3.6vw,18px) Montserrat,sans-serif;color:#c0561b;cursor:pointer;box-shadow:0 6px 0 #e0a030;min-width:120px;min-height:96px;opacity:0;animation:aiFade .6s 2.6s forwards,aiPulse 1.2s 3.2s ease-in-out infinite}
