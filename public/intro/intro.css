@@ -11,14 +11,14 @@
 #aIntro .bird .w{transform-origin:center;animation:aiFlap .25s ease-in-out infinite alternate}
 #aIntro .flag{transform-origin:left center;animation:aiFlag 1s ease-in-out infinite alternate}
 #aIntro .kids,#aIntro .sun{transform-box:view-box;transform-origin:0 0}
-#aIntro .kids{animation:aiWalk 4.6s cubic-bezier(.3,.1,.6,1) forwards}
-#aIntro .bob{animation:aiBob .45s ease-in-out infinite alternate}
-#aIntro .leg{transform-origin:50% 0}
-#aIntro .leg.l{animation:aiStep .9s ease-in-out infinite alternate}
-#aIntro .leg.r{animation:aiStep .9s ease-in-out infinite alternate-reverse}
+#aIntro .kids{animation:aiWalk 6s cubic-bezier(.35,.1,.55,1) forwards}
+#aIntro .bob{animation:aiKBob .35s ease-in-out infinite alternate}
+#aIntro .leg{transform-box:fill-box;transform-origin:50% 0}
+#aIntro .leg.l{animation:aiStep .7s ease-in-out infinite alternate}
+#aIntro .leg.r{animation:aiStep .7s ease-in-out infinite alternate-reverse}
 #aIntro .arm>g{transform-origin:50% 0;transform-box:fill-box}
-#aIntro .arm.l>g{animation:aiSwing .9s ease-in-out infinite alternate-reverse}
-#aIntro .arm.r>g{animation:aiSwing .9s ease-in-out infinite alternate}
+#aIntro .arm.l>g{animation:aiSwing .7s ease-in-out infinite alternate-reverse}
+#aIntro .arm.r>g{animation:aiSwing .7s ease-in-out infinite alternate}
 #aIntro .owl{position:absolute;bottom:4%;right:4%;width:clamp(60px,11vw,110px);animation:aiHop .5s 2.2s 2 ease-in-out}
 #aIntro .owl .lid{transform-origin:center;transform-box:fill-box;animation:aiWake .6s 1.2s forwards}
 @keyframes aiRise{to{transform:translate(300px,105px)}}
@@ -28,8 +28,8 @@
 @keyframes aiFlag{to{transform:skewY(6deg) scaleX(.85)}}
 @keyframes aiWalk{from{transform:translate(185px,300px) scale(1.15)}to{transform:translate(195px,200px) scale(.42)}}
 @keyframes aiBob{from{transform:translateY(0)}to{transform:translateY(-2px)}}
-@keyframes aiStep{from{transform:scaleY(1) rotate(-8deg)}to{transform:scaleY(.82) rotate(8deg)}}
-@keyframes aiSwing{from{transform:rotate(-16deg)}to{transform:rotate(16deg)}}
+@keyframes aiStep{from{transform:rotate(-14deg)}to{transform:rotate(14deg)}}@keyframes aiKBob{from{transform:translateY(0)}to{transform:translateY(-1.6px)}}
+@keyframes aiSwing{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
 @keyframes aiWake{to{transform:scaleY(0)}}
 @keyframes aiHop{50%{transform:translateY(-14px)}}
 @keyframes aiFade{to{opacity:1}}
