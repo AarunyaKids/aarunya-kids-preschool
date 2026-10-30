@@ -34,10 +34,10 @@
 #aIntro .monkey{transform-box:fill-box;transform-origin:50% 0;animation:aiMonkey 2.4s ease-in-out infinite alternate}
 #aIntro .monkey>*{transform-box:fill-box}
 #aIntro .swing{transform-box:fill-box;transform-origin:50% 0;animation:aiSwingSeat 1.2s ease-in-out infinite alternate}
-#aIntro .bunny{animation:aiHop2 .7s ease-in-out infinite}
+#aIntro .bunny{animation:aiHop2 6s linear forwards}
 @keyframes aiMonkey{0%{transform:translateX(-26px) rotate(-8deg)}25%{transform:translateX(-13px) rotate(8deg)}50%{transform:translateX(0) rotate(-8deg)}75%{transform:translateX(13px) rotate(8deg)}100%{transform:translateX(26px) rotate(-8deg)}}
 @keyframes aiSwingSeat{from{transform:rotate(-22deg)}to{transform:rotate(22deg)}}
-@keyframes aiHop2{50%{transform:translateY(-7px)}}
+@keyframes aiHop2{0%,22%,35%,47%,60%,73%,85%,100%{transform:translateY(0);animation-timing-function:ease-out}28.5%,53.5%,66.5%,79%{transform:translateY(-6px);animation-timing-function:ease-in}90%{transform:translateY(-2px)}}
 @media (max-width:600px){#aIntro .otree{width:120px}#aIntro .title{top:9%}}
 @media (prefers-reduced-motion:reduce){#aIntro{display:none}}
 #aIntro{cursor:default}
@@ -48,10 +48,10 @@
 @keyframes aiPulse{50%{box-shadow:0 6px 0 #e0a030,0 0 0 10px #ffc93c55}}
 @keyframes aiWave{from{transform:rotate(-12deg)}to{transform:rotate(12deg)}}
 @media (max-width:600px){#aIntro .hi5{top:26%}}
-#aIntro .bseek{animation:aiSeek 6s ease-in-out forwards}
-@keyframes aiSeek{0%{transform:translateX(0)}25%{transform:translateX(-12px) scaleX(-1)}50%{transform:translateX(10px)}80%,100%{transform:translateX(24px)}}
+#aIntro .bseek{transform-box:fill-box;transform-origin:50% 50%;animation:aiSeek 6s linear forwards}
+@keyframes aiSeek{0%,18%{transform:translateX(0) scaleX(1)}20%,22%{transform:translateX(0) scaleX(-1)}35%,42%{transform:translateX(-8px) scaleX(-1)}45%,47%{transform:translateX(-8px) scaleX(1)}60%{transform:translateX(3px) scaleX(1)}73%{transform:translateX(14px) scaleX(1)}85%,100%{transform:translateX(22px) scaleX(1)}}
 #aIntro .snailm{animation:aiSnail 7s linear forwards}
-@keyframes aiSnail{to{transform:translateX(14px)}}
+@keyframes aiSnail{0%{transform:translateX(0)}100%{transform:translateX(8px)}}
 #aIntro .fronds{transform-box:fill-box;transform-origin:50% 100%;animation:aiSway 2.4s ease-in-out infinite alternate}@keyframes aiSway{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
 @media (prefers-reduced-motion:reduce){#aIntro .bseek,#aIntro .snailm,#aIntro .carrot,#aIntro .fronds{animation:none}}
 
