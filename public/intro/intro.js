@@ -1,6 +1,12 @@
 (function(){var el=document.getElementById('aIntro');if(!el)return;
 var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
-if(rm){el.remove();return}
+var K='aarunya_intro_seen',ss=null;try{ss=window.sessionStorage}catch(e){}
+var qs=location.search||'',skip=/[?&]from=logout/.test(qs);
+try{if(ss&&ss.getItem(K))skip=true}catch(e){}
+try{var r=document.referrer;if(r&&new URL(r).origin===location.origin)skip=true}catch(e){}
+if(/[?&]from=logout/.test(qs)&&history.replaceState){try{history.replaceState(null,'',location.pathname+location.hash)}catch(e){}}
+function mark(){try{ss&&ss.setItem(K,'1')}catch(e){}}
+if(rm||skip){mark();el.remove();return}mark();
 var AC=window.AudioContext||window.webkitAudioContext,ac=null,birdT=null;
 function ctx(){if(!AC)return null;if(!ac){try{ac=new AC()}catch(e){return null}}if(ac.state==='suspended')ac.resume();return ac}
 function chirp(t,f){var o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*1.6,t+.07);o.frequency.exponentialRampToValueAtTime(f*1.1,t+.12);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.035,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+.14);o.connect(g);g.connect(ac.destination);o.start(t);o.stop(t+.15)}
