@@ -9,11 +9,15 @@ var birdT=null,maxT=null;
 
 if(el.getAttribute('data-mode')==='video'){
   var vid=el.querySelector('video');
-  maxT=setTimeout(end,120000);
+  maxT=setTimeout(end,90000);
   if(vid){
+    try{vid.muted=true;vid.defaultMuted=true;vid.setAttribute('muted','');vid.playsInline=true;vid.setAttribute('playsinline','');vid.removeAttribute('controls');vid.controls=false}catch(e){}
     vid.addEventListener('ended',end);
     vid.addEventListener('error',function(){setTimeout(end,800)});
-    var p=vid.play();if(p&&p.catch)p.catch(function(){});
+    var holdFirst=function(){try{if(vid.readyState>=2&&vid.currentTime<0.05)vid.currentTime=0.01}catch(e){}};
+    vid.addEventListener('loadeddata',holdFirst);
+    var p=vid.play();
+    if(p&&p.catch)p.catch(function(){holdFirst();try{vid.pause()}catch(e){}});
   }
   return;
 }

@@ -76,11 +76,11 @@
 @keyframes aiClap{from{rotate:0deg}to{rotate:calc(var(--d,1) * -70deg)}}
 #aIntro.go .hi5{opacity:0!important;pointer-events:none;transition:opacity .3s}
 
-/* Festival / special occasion video intro */
-#aIntro.vidintro{background:#111;display:flex;align-items:center;justify-content:center}
-#aIntro.vidintro .ivwrap{position:relative;width:min(960px,94vw);max-height:90vh;display:flex;flex-direction:column;align-items:center;gap:10px}
-#aIntro.vidintro .ivideo{width:100%;max-height:78vh;background:#000;border-radius:12px}
-#aIntro.vidintro .vframe{width:100%;aspect-ratio:16/9;max-height:78vh;border-radius:12px;overflow:hidden;background:#000}
-#aIntro.vidintro .vframe iframe{width:100%;height:100%;border:0}
-#aIntro.vidintro .ivtitle{color:#fff;font:700 clamp(16px,3vw,22px) Montserrat,sans-serif;text-align:center;margin:0;text-shadow:0 1px 4px #000}
-#aIntro.vidintro .skip{top:auto;bottom:16px;right:16px;transform:none;z-index:3}
+/* Festival / special occasion video intro — fullscreen cover, no chrome */
+#aIntro.vidintro{background:#000;display:block}
+#aIntro.vidintro .ivwrap{position:fixed;inset:0;width:100vw;height:100vh;overflow:hidden;background:#000}
+#aIntro.vidintro .ivideo{position:absolute;inset:0;width:100vw;height:100vh;object-fit:cover;background:#000;border:0;border-radius:0;outline:none}
+#aIntro.vidintro .vframe{position:absolute;inset:0;width:100vw;height:100vh;overflow:hidden;background:#000;border-radius:0;pointer-events:none}
+#aIntro.vidintro .vframe iframe{position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100vh;min-width:177.78vh;transform:translate(-50%,-50%);border:0;pointer-events:none}
+#aIntro.vidintro .ivtitle{display:none!important}
+#aIntro.vidintro .skip{position:absolute;z-index:3;top:auto;bottom:16px;right:16px;left:auto;transform:none;opacity:.85;font-size:12px;padding:6px 14px}
