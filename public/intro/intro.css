@@ -75,3 +75,12 @@
 #aIntro.go .arm.l{--d:-1}
 @keyframes aiClap{from{rotate:0deg}to{rotate:calc(var(--d,1) * -70deg)}}
 #aIntro.go .hi5{opacity:0!important;pointer-events:none;transition:opacity .3s}
+
+/* Festival / special occasion video intro */
+#aIntro.vidintro{background:#111;display:flex;align-items:center;justify-content:center}
+#aIntro.vidintro .ivwrap{position:relative;width:min(960px,94vw);max-height:90vh;display:flex;flex-direction:column;align-items:center;gap:10px}
+#aIntro.vidintro .ivideo{width:100%;max-height:78vh;background:#000;border-radius:12px}
+#aIntro.vidintro .vframe{width:100%;aspect-ratio:16/9;max-height:78vh;border-radius:12px;overflow:hidden;background:#000}
+#aIntro.vidintro .vframe iframe{width:100%;height:100%;border:0}
+#aIntro.vidintro .ivtitle{color:#fff;font:700 clamp(16px,3vw,22px) Montserrat,sans-serif;text-align:center;margin:0;text-shadow:0 1px 4px #000}
+#aIntro.vidintro .skip{top:auto;bottom:16px;right:16px;transform:none;z-index:3}
