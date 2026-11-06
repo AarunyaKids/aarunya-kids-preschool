@@ -84,3 +84,5 @@
 #aIntro.vidintro .vframe iframe{position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100vh;min-width:177.78vh;transform:translate(-50%,-50%);border:0;pointer-events:none}
 #aIntro.vidintro .ivtitle{display:none!important}
 #aIntro.vidintro .skip{position:absolute;z-index:3;top:auto;bottom:16px;right:16px;left:auto;transform:none;opacity:.85;font-size:12px;padding:6px 14px}
+#aIntro.vidintro .sound{position:absolute;z-index:3;top:auto;bottom:16px;right:88px;left:auto;transform:none;opacity:.9;font-size:12px;padding:6px 14px;background:#fff;border:2px solid #f39c34;border-radius:20px;font:600 12px Montserrat,sans-serif;color:#c0561b;cursor:pointer;white-space:nowrap}
+@media (max-width:420px){#aIntro.vidintro .sound{right:auto;left:16px;bottom:16px}}
